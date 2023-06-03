@@ -1,0 +1,98 @@
+<!--View dos produto-->
+
+   
+    <!--Img dos produtos-->
+     <div>
+       <img src="data:image/jpeg;base64,{{base64Image products.dados}}" alt="Imagem" width="500px" class="ms-3 rounded zoom-img" style="position:absolute; border:50px solid #fff; margin-top:130px" id="img-product">
+       <h3 class="card-title" id="card-title">{{products.title}}</h3><hr>
+     </div>
+
+     <!--Mobile-->
+    <div class="card mobile">
+          <div class="card-body">
+               <p>R$: <small style="font-size:1.5rem;">{{products.price}}</small></p>
+               <span class="text-secondary">{{products.subprice}}</span>
+        <div class="my-4 mobile">
+           <label class="form-label" style="display: inline;">Quantidade:</label>
+           <select class="form-select" style="width: 75px; display:inline;">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+         </select>
+       </div>
+          <p class="text-success" style="font-family:Arial;">Em estoque ✅</p>
+        <button class="btn btn-warning carrinh " style="margin-top:30px; margin-left:90px" onclick="increment02()">Adicionar ao carrinho</button>
+        <button class="btn btn-outline-info mt-2" style="margin-left:115px">Comprar agora</button>
+          </div>
+        <hr>
+         <span class="fw-bold ms-2">Descrição do Produto</span>: 
+           <p style="text-indent: 10px; width:90%; margin-left:20px">{{products.describe}}</p>
+    </div>
+
+   
+
+   <!--card para os preços e botões de comprar/carrinho-->
+     <div class="card mt-5" style="width: 250px; margin-left:1170px; height:340px" id="card-product">
+       <div class="card-body" id="body-mobile">
+
+          <p>R$: <small style="font-size:1.5rem">{{products.price}}</small></p>
+         
+         <div class="my-4">
+           <label class="form-label" style="display: inline;">Quantidade:</label>
+           <select class="form-select" style="width: 75px; display:inline;">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+         </select>
+       </div>
+       <p class="text-success" style="font-family:Arial;">Em estoque ✅</p>
+        <button class="btn btn-warning carrinh ms-4" style="margin-top:30px" onclick="increment02()">Adicionar ao carrinho</button>
+        <button class="btn btn-outline-info mt-2 ms-5">Comprar agora</button>
+
+    </div>
+
+   <!---Card do titulo prço, e descrição-->
+    <div class="card" id="view">
+        <div class="card-body">
+           <h3 class="card-title" id="title-01">{{products.title}}</h3>
+     <hr class="price-01">
+         <p class="card-text mx-2 price-01">R$: <small style="font-size: 2rem;" id="price-01">{{products.price}}</small></p>
+         <span class="text-secondary mx-3 price-01">{{products.subprice}}</span>
+      <hr>
+    
+          <span class="fw-bold">Descrição do Produto</span>: 
+           <p style="text-indent: 10px;">{{products.describe}}</p>
+   
+    </div>
+
+
+  <!--Efeito de zoom-->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js"></script>
+
+<script>
+$(document).ready(()=> {
+  $('.zoom-img').elevateZoom();
+});
+
+ const increment02=()=>{
+  let numCar = document.getElementById("numero");
+  let num = parseInt(numCar.innerHTML);
+  num++;
+  numCar.innerHTML = num;
+}
+</script>

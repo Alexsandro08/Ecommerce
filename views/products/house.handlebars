@@ -1,0 +1,26 @@
+{{#each products}}
+    <div class="card m-5" style="width: 300px;">
+       <div class="card-header bg-white">
+
+        
+        <a href="/product/{{category}}"><img src="data:image/jpeg;base64,{{base64Image dados}}" alt="Imagem" width="250px" ></a>
+
+        </div>
+           <div class="card-body">
+              <div class="card-text">
+                <a href="/product/{{category}}">
+                  <p>{{title}}</p>
+                </a>
+                <small class=" fw-bold" style="font-size: 1.5rem;">R$:{{price}}</small><br>
+                <span class="text-secondary">ou até em 12x de 216,66 sem juros</span>
+
+              </div>
+      
+           </div>
+
+   
+{{else}}
+    <h4 class="m-3 text-secondary">No products</h4>
+{{/each}}
+
+

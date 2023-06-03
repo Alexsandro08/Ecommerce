@@ -1,0 +1,105 @@
+<!--View do navBar-->
+
+
+
+<!--NavBar-->
+    <nav class="navbar navbar-expand" style="background-color: #2d56a6; height: 110px;">
+      <a href="#"><img src="../img/carrinho_02.png"id="car"/></a>
+      <p class="text-white mb-5 logo">Online<span class="m-1" style="color: #fdce04;">Shopping</span></p>
+
+        <div class="container mt-5" style="margin-left: -135px;" >
+            <ul class="navbar-nav" id="bar">
+                   
+              <li class="nav-item">
+                <a href="/" class="nav-link text-white mt-3" style="margin-left: 25px;">Home</a>
+  
+              </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle text-white mt-3 ms-3 " data-bs-toggle="dropdown" id="category">Category</a>
+
+                    <ul class="dropdown-menu" style="height: 395px; margin-top: -44px; margin-left: -30px; background-color:#5b7cbd;">
+                      
+                    <li><a href="/eletronics" class="dropdown-item text-white">electronics</a></li><br>
+
+                    <li ><a href="/app_and_games" class="dropdown-item text-white">apps and games</a></li><br>
+
+                     <li ><a href="/house" class="dropdown-item text-white">house</a></li><br>
+
+                     <li ><a href="/kitchen" class="dropdown-item text-white">kitchen</a></li><br>
+
+                      <li ><a href="/computers_and_informatics" class="dropdown-item text-white">computers and informatics</a></li><br>
+                      <li ><a href="/sports" class="dropdown-item text-white">sports</a></li><br>
+
+                      <li ><a href="/smartphone" class="dropdown-item text-white">smartphones</a></li><br>
+              
+                  </ul>
+  
+               </li>
+                <li class="nav-item">
+                   <a href="#about" class="nav-link  text-white mt-3 mx-2">Contacts</a>
+  
+                </li>
+
+                <li class="nav-item">
+                <a href="#about" class="nav-link  text-white mt-3 mx-1">About</a>
+  
+                </li>
+  
+            </ul>
+
+
+           <!--Barra de pesquisa-->
+        </div>
+       
+          <form action="/search" method="get" id="search-form" autocomplete="on">
+          <div class="form-group d-flex" role="group">
+            <input type="text" name="search" id="search" placeholder="Search here" class="form-control rounded-4" required>
+ 
+            <input type="submit" value="Search" class="btn btn-primary me-2" id="submit">
+          </div>
+          </form>
+
+            <a href="#"><img src="../img/carrinho.png" id="carrinho" class="mt-5"/></a>
+            <p class="me-3 text-white" id="numero">0</p>
+     
+     </nav>
+    
+   
+      <!--Menu sanduiche-->
+    <nav class="navbar d-flex position-absolute" id="nav" style="margin-top: -50px; background-color: #2d56a6;">
+       <div class="offcanvas offcanvas-start" id="menu">
+          <div class="offcanvas-header bg-primary">
+            <h1 class="offcanvas-title">Menu</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+           <div class="offcanvas-body">
+            <h5 class="fw-bold">Destaques</h5><br>
+             <a href="#" class="mt-5">Mais vendidos</a><br><br>
+             
+             <a href="#" class="mt-5">Novidades</a><br><br>
+             
+             <a href="#" class="mt-5">Em alta</a><br><br>
+             <hr>
+             <h5 class="fw-bold">Produtos por Categoria</h5><br>
+                <a href="/eletronics">Eletronics</a><br><br>
+                <a href="/app_and_games">Games</a><br><br>
+                <a href="/house">House</a><br><br>
+                <a href="/kitchen">Kitchen</a><br><br>
+                <a href="/computers_and_informatics">Informatics</a><br><br>
+                <a href="/sports">Sports</a><br><br>
+                <a href="/smartphone">Smartphones</a><br><br>
+                <hr>
+                <a href="#">Ajuda</a>
+        
+            
+          
+            
+            </div>
+
+         </div>
+
+           <button type="button" class="navbar-toggler bg-primary mx-1 position-absolute" id="btn" data-bs-toggle="offcanvas" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+
+      </nav>
+

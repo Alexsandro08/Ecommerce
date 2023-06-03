@@ -1,0 +1,233 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  
+}
+
+body{
+    background-color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#btn{
+    margin-top: 35px;
+}
+
+#car{
+    margin-inline: 10px;
+    width: 50px;
+    margin-bottom: 35px;
+    margin-top: -20px; 
+}
+
+#bar{
+    height: 150px;
+}
+
+.nav-item{
+    margin-top: 50px;  
+}
+
+.nav-link{
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.nav-link:hover{
+    background-color: #0000ffc3;
+}
+
+.product{
+    text-shadow: 0px 0px 2px #00000086;
+    color: #fdce04;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+.prod{
+    width: 200px;
+    height: 280px;
+    display: inline-block;
+}
+
+.prod:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+#about{
+    background-color: #2d56a6;
+}
+
+#search{
+    width: 350px;
+}
+
+#submit{
+    height: 40px;
+    margin-left: 10px;
+}
+
+#container{
+    display: inline-block;
+}
+
+#container:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#numero{
+    text-align: center;
+    background-color: #fbb30a;
+    border: 1px solid #ffffff12;
+    border-radius: 50%;
+    width: 30px;
+    margin-top: 25px;
+}
+#carrinho{
+    margin-inline: 10px;
+    width: 30px;
+    margin-top: 70px;   
+}
+
+#view{
+    margin-left: -650px;
+    border: none;
+    width: 644px;
+    height: 407px;
+    margin-top: -220px;
+}
+
+.offcanvas-body a{
+    text-decoration: none;
+    color:#000;
+}  
+
+.dropdown-menu li :hover{
+    background-color: #6cbec1;
+}
+
+.carousel-control-next-icon{
+    background-color: #cccccc91;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon{
+    background-color: #cccccc91;
+    height: 50px;
+    border-radius: 10px;
+}
+#card-title{
+    margin-top: -50px;
+}
+
+.test {
+    display: none; /* Exibição padrão */
+  }
+  
+.mobile{
+    display: none;
+}
+
+
+@media (max-width:767px){
+
+    
+.navbar-expand{
+    width: 100%;
+  
+}
+  #search{
+    margin-left: -305px;
+    margin-bottom: -40px;
+    width: 200px;
+    height: 30px;
+    
+  }   
+  
+  #submit{
+    width: 80px;
+    font-size: 0.9em;
+    height: 30px;
+   
+  }
+  #category{
+    display: none;
+  }
+ #menu{
+    width: 70vw;
+    height: 100%;
+ }
+
+ .logo{
+    margin-top: -20px;
+    font-size: 0.9em;
+  }
+
+  #car{
+    margin-top: -30px;
+    width: 40px;
+  }
+  #bar{
+    margin-top: 15px;
+    margin-left: 15px;
+    
+  }
+  #carrinho{
+    width: 25px;
+    margin-bottom: -30px;
+    margin-left: -30px;
+  }
+  #numero{
+    width: 20px;
+    font-size: 0.9em;
+    margin-bottom: -20px;
+  }
+ #img-product{
+    width: 400px; 
+    
+}
+ #view{
+    width: 100%;
+    margin-top: 40px;
+   
+}
+#card-product{
+    border: none;
+    width: 100%;  
+   display: none;
+    
+}
+#body-mobile{
+    width: 100%;
+    margin-left:-1080px; 
+    margin-top: 450px;
+}
+#card-title{
+    margin-top:20px;
+    margin-left: 20px;
+}
+#title-01{
+    display: none;
+}
+.price-01{
+    display: none;
+}
+
+.mobile{
+    display: block;
+    margin-top: 445px;
+}
+}

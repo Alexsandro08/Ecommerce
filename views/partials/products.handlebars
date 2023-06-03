@@ -1,0 +1,40 @@
+
+
+{{#each products}}
+ 
+   <div class="card ms-5 mt-5" style="width: 220px;" id="container">
+    <div class="card-header bg-white">
+        
+     <a href="/product/{{category}}"><img src="data:image/jpeg;base64,{{base64Image dados}}" alt="Imagem" width="140px" class="mt-2 produto" style="margin-left: 20px;"></a>
+         
+      </div>
+          <div class="card-body" id="card">
+              <div class="card-text">
+                
+                <a href="/product/{{category}}">
+                  <p>{{title}}</p>
+                </a>
+                 <small class=" fw-bold" style="font-size: 1.5rem;">R$:{{price}}</small><br>
+                 <span class="text-secondary">{{subprice}}</span>
+
+                 <button class="btn btn-primary" style="margin-left: 150px;" onclick="increment()">+</button>
+                
+              </div>
+
+              </div>
+      
+           </div>
+
+   
+{{else}}
+    <h4 class="m-3 text-secondary">No products</h4>
+{{/each}}
+
+<script>
+  const increment=()=>{
+  let numCar = document.getElementById("numero");
+  let num = parseInt(numCar.innerHTML);
+  num++;
+  numCar.innerHTML = num;
+}
+</script>
