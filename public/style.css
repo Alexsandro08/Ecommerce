@@ -129,8 +129,8 @@ body{
     height: 50px;
     border-radius: 10px;
 }
-#card-title{
-    margin-top: -50px;
+.title{
+    display: none;
 }
 
 .test {
@@ -215,7 +215,8 @@ body{
     margin-left:-1080px; 
     margin-top: 450px;
 }
-#card-title{
+.title{
+    display: block;
     margin-top:20px;
     margin-left: 20px;
 }
