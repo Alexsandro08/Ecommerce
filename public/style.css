@@ -142,8 +142,9 @@ body{
 }
 
 
-@media (max-width:767px){
+/*Mobile*/
 
+@media (max-width:767px){
     
 .navbar-expand{
     width: 100%;
