@@ -34,12 +34,12 @@ app.use('/', router);
 
 // Conexão com o Mongo
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/ecommerce', {
+mongoose.connect('mongodb+srv://alexsandroe935:21215704@cluster0.wxa5mrr.mongodb.net/ecommerce', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
-  .then(() => {
-    console.log('Conectado ao MongoDB');
+  .then((db) => {
+    console.log('Conectado ao MongoDB', db.connection.host);
   })
   .catch(err => {
     console.error('Erro ao conectar ao MongoDB:', err);
