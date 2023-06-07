@@ -32,6 +32,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 //rotas
 app.use('/', router);
 
+
+//config banco de dados
 // Conexão com o Mongo
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb+srv://alexsandroe935:21215704@cluster0.wxa5mrr.mongodb.net/ecommerce', {
