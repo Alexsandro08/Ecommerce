@@ -9,6 +9,8 @@ const handlebarsHelpers = require('handlebars-helpers');
 const handlebars = require('handlebars');
 require('./models/products');
 const Product = mongoose.model('products');
+require('dotenv').config();
+
 
 // Handlebars
 app.engine('handlebars', hand.engine({
@@ -36,12 +38,15 @@ app.use('/', router);
 //config banco de dados
 // Conexão com o Mongo
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb+srv://alexsandroe935:21215704@cluster0.wxa5mrr.mongodb.net/ecommerce', {
+
+const MONGODB_URI = `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@cluster0.wxa5mrr.mongodb.net/${process.env.MONGODB_DATABASE}`;
+
+mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
-  .then((db) => {
-    console.log('Conectado ao MongoDB', db.connection.host);
+  .then(db => {
+    console.log('Conectado ao MongoDB', db.connection.host );
   })
   .catch(err => {
     console.error('Erro ao conectar ao MongoDB:', err);
